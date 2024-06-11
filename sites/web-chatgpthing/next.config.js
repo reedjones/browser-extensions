@@ -1,7 +1,5 @@
 module.exports = {
-  experimental: {
-    appDir: true
-  },
+
   images: {},
   reactStrictMode: true,
   transpilePackages: ["ui"],
