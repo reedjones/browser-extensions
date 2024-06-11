@@ -1,6 +1,6 @@
 {
   "name": "ext",
-  "author": "kant01ne",
+  "author": "reedjones",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -19,16 +19,20 @@
     "package": "turbo run package",
     "prepare": "husky install",
     "test": "turbo run test",
-    "postinstall": "cross-env bit import && bit compile && bit link"
+    "afterinstall": "bit import && bit compile && bit link",
+    "bit:tag": "bit tag",
+    "bit:import": "bit import",
+    "bit:export": "bit export",
+    "bit:status": "bit status",
+    "bit:build": "bit build",
+    "which": "which node"
+
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
     "eslint-config-custom": "workspace:*",
     "prettier": "latest",
     "turbo": "latest"
-  },
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "packageManager": "pnpm@7.7.0"
+  }
+
 }

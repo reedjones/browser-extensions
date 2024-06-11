@@ -8,6 +8,7 @@
       "outputs": ["dist/**", ".next/**"],
       "env": ["RELEASE_PLEASE_TOKEN"]
     },
+
     "build:firefox": {
       "dependsOn": ["^build:firefox"],
       "outputs": ["dist/**"]

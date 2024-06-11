@@ -9,5 +9,19 @@
  */
 
 {
+    "envs/my-react-env": {
+        "name": "envs/my-react-env",
+        "scope": "",
+        "version": "",
+        "defaultScope": "reeds.extensions",
+        "mainFile": "index.ts",
+        "rootDir": "bit-components/extensions/envs/my-react-env",
+        "config": {
+            "bitdev.general/envs/bit-env@1.0.2": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.general/envs/bit-env"
+            }
+        }
+    },
     "$schema-version": "17.0.0"
 }
