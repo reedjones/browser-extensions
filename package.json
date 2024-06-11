@@ -18,9 +18,11 @@
     "lint": "turbo run lint",
     "package": "turbo run package",
     "prepare": "husky install",
-    "test": "turbo run test"
+    "test": "turbo run test",
+    "postinstall": "cross-env bit import && bit compile && bit link"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "eslint-config-custom": "workspace:*",
     "prettier": "latest",
     "turbo": "latest"
